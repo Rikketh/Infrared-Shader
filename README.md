@@ -85,6 +85,6 @@ You can take a look at an [example IRD map here](./examples/example_ird.png).
 
 ## Contact
 
-Lars Sørensen - [@alareis_vrc](https://twitter.com/alareis_vrc) - [alareis](https://vrchat.com/home/user/usr_e3283b19-0468-479f-82de-0907c41920b0)
+Lars Sørensen - [@alareis_vrc](https://twitter.com/alareis_vrc) - [alareis](https://vrchat.com/home/user/usr_e3283b19-0468-479f-82de-0907c41920b0) - [VRChat-specific discord server](https://discord.gg/invite/hfdHnWVcbh)
 
 Project Link: [https://github.com/Rikketh/Infrared-Shader](https://github.com/Rikketh/Infrared-Shader)
