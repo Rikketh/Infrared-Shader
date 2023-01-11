@@ -10,7 +10,7 @@
 		ColorMask 0 // kills Fragment execution
 
 		Tags{ "RenderType"="Transparent" "Queue"="Geometry-1"}
-		ZTest On
+		ZTest LEqual
 		ZWrite Off
 		Cull Off
 

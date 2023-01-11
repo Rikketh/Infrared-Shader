@@ -8,10 +8,11 @@ Shader "Custom/Alareis/Infrared/Write"{
 		// ! all values are linear
 		_IRMask("IR Mask", 2D) = "white" {}
 		_GlowFactor("Glow Factor", Range(0, 53)) = 1.0
-		_ScanSpeed("Scan speed", Float) = (1.0, 1.0, 0, 0)
+		_ScanSpeed("Strobe speed", Float) = (1.0, 1.0, 0, 0)
 		_Alpha("Opacity factor", Range(0, 1)) = 1.0
 		[IntRange] _StencilRef ("Stencil Reference Value", Range(0,255)) = 0
 		[ToggleUI] _StrobeComposition_Multiplicative("Multiplicative Strobe Composition", Int) = 0
+		[Enum(UnityEngine.Rendering.CompareFunction)]_ZTestOp ("ZTest Operation", Float) = 4 // LessEqual
 	}
 
 	SubShader{
@@ -22,7 +23,7 @@ Shader "Custom/Alareis/Infrared/Write"{
 			"IgnoreProjector"="True"
 			// "PreviewType"="Plane"
 		}
-		ZTest On
+		ZTest [_ZTestOp]
 		// ZWrite Off
 		Lighting Off
 		// Blend One OneMinusSrcAlpha // premultiplied alpha
